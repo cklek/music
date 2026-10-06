@@ -1,0 +1,25 @@
+/* Web Computer · Daylight (light) — the lead theme
+ * Values as labelled in Themes.svg. Loaded alone this styles the page;
+ * loaded with the others (brand.css), data-theme="daylight" on any
+ * element picks it for that subtree. */
+:root:not([data-theme]),
+[data-theme="daylight"] {
+  color-scheme: light;
+
+  --ground: #D4CBB3;
+  --line: #C4BBA3;
+  --surface: #DDD6C1;
+  --muted: #6B665A;
+  --raised: #E4DFCF;
+  --text: #2B2B2B;
+  --paper: #E7E5E4;
+  --ink: #141414;
+  --accent: #FF4B48;
+  --accent-2: #EBC06D;
+
+  /* shared */
+  --danger: #FF4B48;
+  --ok: #99D68F;
+  --info: #74DBCB;
+  --warn: #EBC06D;
+}

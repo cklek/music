@@ -1,0 +1,33 @@
+/* Web Computer · Lisp (dark)
+ * "Theme Lisp.svg" has no palette table, so these are read off the mock,
+ * which uses Chicago95's exact colours on navy: white borders, bars and
+ * text (line numbers too, so muted and raised are white as well), blue
+ * text on the white bars (ink on paper), cyan for the selected row, the
+ * cursor and code, yellow for the active menu item, magenta only in the
+ * imagery. Loaded alone this styles the page; loaded with the others
+ * (brand.css), data-theme="lisp" on any element picks it for that subtree. */
+:root:not([data-theme]),
+[data-theme="lisp"] {
+  color-scheme: dark;
+
+  --ground: #000080;
+  --line: #FFFFFF;
+  --surface: #000080;
+  --muted: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #FFFFFF;
+  --paper: #FFFFFF;
+  --ink: #0000EE;
+  --accent: #00FFEE;
+  --accent-2: #FFFF00;
+  --link: #0000EE;
+  --cyan: #00FFEE;
+  --magenta: #FF00FF;
+  --yellow: #FFFF00;
+
+  /* shared, carried over from Themes.svg */
+  --danger: #FF4B48;
+  --ok: #99D68F;
+  --info: #74DBCB;
+  --warn: #EBC06D;
+}

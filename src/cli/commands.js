@@ -1,0 +1,82 @@
+export default {
+  app: "music",
+  commands: [
+    {
+      name: "library list",
+      method: "GET",
+      path: "/api/library",
+      description:
+        "List media, favorites, and saved groups; rescan=1 refreshes.",
+      query: ["rescan"],
+    },
+    {
+      name: "rescan",
+      method: "POST",
+      path: "/api/rescan",
+      description: "Scan media; force=1 rereads metadata.",
+      query: ["force"],
+    },
+    {
+      name: "file get",
+      method: "GET",
+      path: "/api/file",
+      description: "Download original bytes; use --output FILE or pipe stdout.",
+      query: ["path"],
+    },
+    {
+      name: "art get",
+      method: "GET",
+      path: "/api/art",
+      description: "Download artwork/preview bytes; use --output FILE.",
+      query: ["path"],
+    },
+    {
+      name: "upload",
+      method: "POST",
+      path: "/api/upload",
+      description: "Upload one or more media files.",
+      body: "multipart",
+    },
+    {
+      name: "track update",
+      method: "PATCH",
+      path: "/api/track",
+      description: "Update metadata with {path, ...fields}.",
+      body: "json",
+    },
+    {
+      name: "track delete",
+      method: "DELETE",
+      path: "/api/track",
+      description: "Delete a track.",
+      query: ["path"],
+    },
+    {
+      name: "favorite set",
+      method: "POST",
+      path: "/api/favorite",
+      description: "Set {path, favorite}; false removes the favorite.",
+      body: "json",
+    },
+    {
+      name: "playlists create",
+      method: "POST",
+      path: "/api/playlists",
+      description: "Create {name, paths?}.",
+      body: "json",
+    },
+    {
+      name: "playlists update",
+      method: "PATCH",
+      path: "/api/playlists/:id",
+      description: "Update {name?, paths?}.",
+      body: "json",
+    },
+    {
+      name: "playlists delete",
+      method: "DELETE",
+      path: "/api/playlists/:id",
+      description: "Delete the saved group.",
+    },
+  ],
+};

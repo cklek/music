@@ -1,0 +1,25 @@
+/* Web Computer · Build Knight (dark)
+ * Values as labelled in Themes.svg. Loaded alone this styles the page;
+ * loaded with the others (brand.css), data-theme="build-knight" on any
+ * element picks it for that subtree. */
+:root:not([data-theme]),
+[data-theme="build-knight"] {
+  color-scheme: dark;
+
+  --ground: #0F0F0F;
+  --line: #151515;
+  --surface: #141414;
+  --muted: #515151;
+  --raised: #1C1C1C;
+  --text: #E7E5E4;
+  --paper: #E7E5E4;
+  --ink: #FFFFFF;
+  --accent: #FF6462;
+  --accent-2: #7BA2F7;
+
+  /* shared */
+  --danger: #FF4B48;
+  --ok: #99D68F;
+  --info: #74DBCB;
+  --warn: #EBC06D;
+}

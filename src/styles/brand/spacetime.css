@@ -1,0 +1,25 @@
+/* Web Computer · Spacetime (dark)
+ * Values as labelled in Themes.svg. Loaded alone this styles the page;
+ * loaded with the others (brand.css), data-theme="spacetime" on any
+ * element picks it for that subtree. */
+:root:not([data-theme]),
+[data-theme="spacetime"] {
+  color-scheme: dark;
+
+  --ground: #1A1B26;
+  --line: #33364F;
+  --surface: #202130;
+  --muted: #51568B;
+  --raised: #2A2C40;
+  --text: #C0CAF5;
+  --paper: #C0CAF5;
+  --ink: #E7E9FF;
+  --accent: #385FFA;
+  --accent-2: #7BA2F7;
+
+  /* shared */
+  --danger: #FF4B48;
+  --ok: #99D68F;
+  --info: #74DBCB;
+  --warn: #EBC06D;
+}

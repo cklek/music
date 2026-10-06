@@ -1,0 +1,30 @@
+/* Web Computer · Chicago95 (light)
+ * Values as labelled in "Theme Chicago95.svg": Windows 95 silver, navy and
+ * teal, with CMYK as the accents (cyan, magenta, yellow on black text).
+ * Loaded alone this styles the page; loaded with the others (brand.css),
+ * data-theme="chicago95" on any element picks it for that subtree. */
+:root:not([data-theme]),
+[data-theme="chicago95"] {
+  color-scheme: light;
+
+  --ground: #C0C0C0;
+  --line: #808080;
+  --surface: #C0C0C0;
+  --muted: #808080;
+  --raised: #FFFFFF;
+  --text: #000000;
+  --paper: #E7E5E4;
+  --ink: #141414;
+  --accent: #000080;
+  --accent-2: #008081;
+  --link: #0000EE;
+  --cyan: #00FFEE;
+  --magenta: #FF00FF;
+  --yellow: #FFFF00;
+
+  /* shared, carried over from Themes.svg */
+  --danger: #FF4B48;
+  --ok: #99D68F;
+  --info: #74DBCB;
+  --warn: #EBC06D;
+}
